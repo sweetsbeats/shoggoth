@@ -65,11 +65,14 @@ class TodoSubmit extends Component {
   render() {
     return (
       <form onSubmit={this.handleSubmit}>
+        
+        <div style={{display: 'flex'}}>
         <label>
-          action 
-        <input value={this.state.value} onChange={this.handleChange}/>
-          </label>
-          <input type="submit" value="Submit"/> 
+          <input value={this.state.value} onChange={this.handleChange}/>
+        </label>
+          
+          <input id='sub' type="submit" value="Submit"/> 
+          </div>
           <ul>
             {this.state.actions.map( (action) => <li key={action.toString()}> <Action action={action} handleDelete={this.delete} /> </li>)}
          </ul>
