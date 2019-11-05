@@ -41,6 +41,48 @@ a:visited {
 }
 
 
+ul {
+  list-style-type: none;
+  
+}
+li {
+  display: inline-grid;
+  
+  margin-top: 3px;
+}
+
+.actionName {
+  float: left;
+}
+
+.task {
+  float: right;
+  display: inline-flex;
+  margin-right: 20px;
+}
+
+.x {
+  float:right;
+  -moz-user-select: none;
+  margin-right: 20px;
+}
+
+div.x:hover {
+  transform: scale(1.2);
+  color: maroon;
+  text-shadow: 1px 1px 0px black;
+
+}
+
+.liDiv {
+  display: inline-grid;
+}
+
+form {
+  width: 40%;
+  margin-left: -10%;
+
+}
 
 pre {
   margin: 0;
@@ -80,4 +122,18 @@ pre {
 
   width: 150px;
   background-color: #2e2338;
+}
+
+
+#todo {
+  width: 50%;
+  background-color: #2e2338;
+  color: #ffccff;
+
+  font-size: 35px;
+   
+  padding-left: calc(50% - 75px);
+  
+  padding-top: 40px;
+  padding-bottom: 40px;
 }

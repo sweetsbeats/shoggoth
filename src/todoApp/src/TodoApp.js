@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-//import './App.css';
+//import './TodoApp.css';
 
 export default class TodoApp extends Component {
   
@@ -92,8 +92,8 @@ class Action extends Component {
   render() {
     return(
       <div class="task">
-        <div className="actionName">{this.action}</div>
-        <div className="x" onClick={this.delete}>&times;</div> 
+        <div className="actionName"><pre>{this.action}  </pre></div>
+        <div className="x" onClick={this.delete}>[&times;]</div> 
       </div> 
       )
   }
